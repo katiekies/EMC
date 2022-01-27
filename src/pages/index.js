@@ -13,7 +13,7 @@ class IndexPage extends React.Component{
     this.rad_sun = 696340e3;
     this.distance_sun_earth = 149600000000;
     // this.time_scale = 10; //10 seconds every milliseconds - 1 min per day
-    this.time_scale = 8.2e5;
+    this.time_scale = 6.2e5;
   }
 
 
