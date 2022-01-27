@@ -8,7 +8,7 @@ class IndexPage extends React.Component{
   constructor(props){
     super(props);
     this.scale = 1.4e-5;
-
+    
     this.rad_earth = 7379e3;
     this.rad_sun = 696340e3;
     this.distance_sun_earth = 149600000000;
@@ -40,7 +40,7 @@ class IndexPage extends React.Component{
 
   create_scene(){
     const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 500);
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 5000000000000);
 
     const renderer =  new THREE.WebGLRenderer();
     renderer.setSize(window.innerWidth, window.innerHeight);
