@@ -2,7 +2,7 @@ import * as React from "react"
 import * as THREE from 'three';
 import { OrbitControls } from "../../node_modules/three/examples/jsm/controls/OrbitControls.js";
 import { TextureLoader } from "../../node_modules/three/src/loaders/TextureLoader.js";
-
+import "./styles.css";
 // markup
 class IndexPage extends React.Component{
   constructor(props){
@@ -71,11 +71,11 @@ class IndexPage extends React.Component{
     let move = () => {setTimeout(() => {
       
       let theta = seconds * 7.2722e-5;
-      let x = this.distance_sun_earth * this.scale * Math.cos(theta);
-      let y = this.distance_sun_earth * this.scale * Math.sin(theta);
+      // let x = this.distance_sun_earth * this.scale * Math.cos(theta);
+      // let y = this.distance_sun_earth * this.scale * Math.sin(theta);
 
-      light.position.set(x, 0, y)
-      sun.position.set(x, 0, y)
+      // light.position.set(x, 0, y)
+      // sun.position.set(x, 0, y)
       seconds = seconds + this.time_scale;
       move();
     }, 1)}
